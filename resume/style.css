@@ -44,7 +44,7 @@ h1 {
     font-size: large;
 }
 .degree {
-    font-size: large;
+    font-size: medium;
 }
 .when::before {
     content: "\2014";

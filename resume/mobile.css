@@ -1,0 +1,77 @@
+body {
+    padding: 32px;
+    font-family: Helvetica, Verdana, sans-seorif;
+    font-size:small;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:green;
+}
+header {
+    background-color: lightgray;
+    font-weight: normal;
+    width: 100%;
+}
+#wrapper {
+    min-width: 800px;
+    max-width: 800px;
+}
+.addr {
+    top: 0px;
+    right: 0px;
+    padding:12px;
+}
+#hcard-Elliot-Winard {
+    display:flex;
+    justify-content:space-between;
+}
+.objective {
+    margin-left:40px;
+    margin-right:40px;
+}
+header h1 {
+    font-size: xx-large;
+}
+section {
+}
+h1 {
+    background-color: lightgray;
+    font-weight: normal;
+    padding: 12px;
+}
+.skills, .awards, .jobs {
+    padding-right: 40px;
+}
+.institution {
+    font-size: large;
+}
+.degree {
+    font-size: medium;
+}
+.when::before {
+    content: "\2014";
+}
+.where::after {
+    content: ")";
+}
+.where::before {
+    content: "(";
+}
+.skill, .award, .education, .job, .association {
+    display: inline-block;
+}
+.skill .name, .award .name, .association .name {
+    font-size: large;
+    float: left;
+    width: 100%;
+}
+.skill .details, .award .details, .association .details {
+    float:right;
+    width: 90%
+}
+
+.jobs, .education {
+    width:90%;
+}
+li {
+    padding: 4px;
+}

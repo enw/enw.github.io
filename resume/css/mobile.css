@@ -4,7 +4,7 @@ body {
     font-size:small;
     margin-left:auto;
     margin-right:auto;
-    background-color:green;
+    background-color:rgb(250, 250, 255);
 }
 header {
     background-color: lightgray;
@@ -12,8 +12,8 @@ header {
     width: 100%;
 }
 #wrapper {
-    min-width: 800px;
-    max-width: 800px;
+    min-width: 100%;
+    max-width: 100%;
 }
 .addr {
     top: 0px;

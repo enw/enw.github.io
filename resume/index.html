@@ -3,16 +3,35 @@
   <head>
     <title>elliot winard - resume</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- home-screen icons -->
+    <!--
+    <link rel="apple-touch-icon"
+          href="/static/images/identity/HTML5_Badge_64.png" />
+    <link rel="apple-touch-icon-precomposed"
+          href="/static/images/identity/HTML5_Badge_64.png" />
+    -->
+    
     <meta charset="UTF-8">
     <meta name="description" content="Resume for Elliot Winard - a design-savvy software engineer">
     <meta name="keywords" content="resume, caveteen, elliot winard, design, music, web">
     <meta name="author" content="Elliot Winard" />
     <meta charset="UTF-8" />
 
-    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="style.css">
-    <link rel="stylesheet" media="screen and (max-device-width: 800px)" href="mobile.css">
+    <link rel="stylesheet"
+          media="all" href="css/base.css" />
+    <link rel="stylesheet"
+          media="only screen and (max-width: 800px)" href="css/mobile.css" />
 
-    <script src="script.js"></script>
+    <script>
+      // Hides mobile browser's address bar when page is done loading.
+      window.addEventListener('load', function(e) {
+        setTimeout(function() { window.scrollTo(0, 1); }, 1);
+      }, false);
+    </script>
 
   </head>
   <body>

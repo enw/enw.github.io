@@ -37,20 +37,32 @@ section h1 {
     font-weight: normal;
     padding: 12px;
 }
+.tech {
+    text-align: center;
+}
+.tech .name {
+    text-align: center;
+    padding:12px;
+}
 .skills {
     display: flex;
 }
 .skills .skill {
     flex:1;
     text-align: center;
+    padding:12px;
 }
 .skill .name {
-    margin:12px;
+    padding:12px;
     font-size: large;
 }
-.skill .details {
+.skill .details, .tech .details {
     line-height: 1.4;
     font-size: small;
+}
+.tech .details {
+    padding: 40px;;
+/*    text-align: justify; */
 }
 .skills, .awards, .jobs {
     padding-right: 40px;

@@ -1,7 +1,7 @@
 body {
     padding: 32px;
     font-family: Helvetica, Verdana, sans-seorif;
-    font-size:small;
+    font-size:medium;
     margin-left:auto;
     margin-right:auto;
 }
@@ -32,10 +32,25 @@ header h1 {
 }
 section {
 }
-h1 {
+section h1 {
     background-color: lightgray;
     font-weight: normal;
     padding: 12px;
+}
+.skills {
+    display: flex;
+}
+.skills .skill {
+    flex:1;
+    text-align: center;
+}
+.skill .name {
+    margin:12px;
+    font-size: large;
+}
+.skill .details {
+    line-height: 1.4;
+    font-size: small;
 }
 .skills, .awards, .jobs {
     padding-right: 40px;
@@ -58,12 +73,12 @@ h1 {
 .skill, .award, .education, .job, .association {
     display: inline-block;
 }
-.skill .name, .award .name, .association .name {
+.award .name, .association .name {
     font-size: large;
     float: left;
     width: 100%;
 }
-.skill .details, .award .details, .association .details {
+.award .details, .association .details {
     float:right;
     width: 90%
 }

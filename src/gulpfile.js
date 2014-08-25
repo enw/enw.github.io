@@ -173,9 +173,14 @@ gulp.task('serve:dist', ['default'], function () {
 });
 
 // Copy dist files to ../resume
-gulp.task('deploy', function () {
+gulp.task('deploy:resume', function () {
     gulp.src('dist/**')
         .pipe(gulp.dest('../resume'));
+});
+
+gulp.task('deploy:fonts', function () {
+    gulp.src('dist/fonts/**')
+        .pipe(gulp.dest('../fonts'));
 });
 
 // Build Production Files, the Default Task

@@ -41,10 +41,11 @@
   }
 
   main.addEventListener('click', closeMenu);
-  menuBtn.addEventListener('click', toggleMenu);
-  navdrawerContainer.addEventListener('click', function (event) {
-    if (event.target.nodeName === 'A' || event.target.nodeName === 'LI') {
+  if (menuBtn) { menuBtn.addEventListener('click', toggleMenu); }
+  if (navdrawerContainer) { navdrawerContainer.addEventListener('click', function (event) {
+  if (event.target.nodeName === 'A' || event.target.nodeName === 'LI') {
       closeMenu();
     }
-  });
+    });
+                            }
 })();

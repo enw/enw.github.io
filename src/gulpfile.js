@@ -172,6 +172,12 @@ gulp.task('serve:dist', ['default'], function () {
   });
 });
 
+// Copy dist files to ../resume
+gulp.task('deploy', function () {
+    gulp.src('dist/**')
+        .pipe(gulp.dest('../resume'));
+});
+
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
   runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);

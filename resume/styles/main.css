@@ -4044,6 +4044,10 @@ section ul li {
   position: static;
 }
 
+section ul li ul li {
+  position: relative;
+}
+
 .todo {
   background-color: yellow;
 }
